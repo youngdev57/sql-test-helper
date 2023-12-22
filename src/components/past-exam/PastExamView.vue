@@ -4,8 +4,8 @@
         <h5 style="color: #cad6ff">{{ question && question.history }}</h5>
         <h1>Q. {{ question && question.question }} </h1>
     </section>
-    <section class="sql-section section-wrapper">
-        <p>{{ question && question.sql }}</p>
+    <section v-if="question && question.sql" class="sql-section section-wrapper">
+        <div v-html="question.sql" style="line-height: 25px;"></div>
     </section>
     <div v-if="question && question.tables" class="table-section section-wrapper">
         <div v-for="(tableInfo, idx) in question.tables" :key="`table-${tableInfo.name}-${idx}`">
@@ -204,7 +204,6 @@ input[type="text"]:focus {
 }
 .sql-section {
     border-radius: 10px;
-    text-align: center;
     color: #606060;
 }
 .answer-section {
