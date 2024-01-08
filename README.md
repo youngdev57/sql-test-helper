@@ -2,7 +2,7 @@
 - SQL 테스트 헬퍼는 정보처리기사 SQL 파트 대비용 문제 풀이 사이트입니다.
 
 ## 💻 Demo
-https://youngdev57.github.io/javascript-archive/
+https://youngdev57.github.io/sql-test-helper
 
 ## Project setup
 ```
