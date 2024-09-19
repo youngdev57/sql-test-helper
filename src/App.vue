@@ -1,11 +1,10 @@
 <template>
     <div id="app">
-        <header>
-        </header>
+        <header></header>
         <main>
             <PastExamHandler ref="past" :mobile-status="mobileStatus" />
         </main>
-      </div>
+    </div>
 </template>
 
 <script>
@@ -34,7 +33,7 @@ export default {
 
     methods: {
         checkMobileStatus() {
-          this.mobileStatus = window.innerWidth <= 767;
+            this.mobileStatus = window.innerWidth <= 767;
         }
     }
 }
